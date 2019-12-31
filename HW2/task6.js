@@ -1,12 +1,12 @@
 'use strict'
-let summ = +prompt('Сколько денег вы хотите снять с банковского счета?');
-console.log(summ);
-let last = summ % 10;
+let money = +prompt('Сколько денег вы хотите снять с банковского счета?');
+console.log(money);
+let last = money % 10;
 
 if (last === 1) {
-    alert(`Вы сняли ${summ} рубль`);
-} else if (last < 5) {
-    alert(`Вы сняли ${summ} рубля`);
+    alert(`Вы сняли ${money} рубль`);
+} else if (last < 5 && last > 0) {
+    alert(`Вы сняли ${money} рубля`);
 } else {
-    alert(`Вы сняли ${summ} рублей`);
+    alert(`Вы сняли ${money} рублей`);
 }

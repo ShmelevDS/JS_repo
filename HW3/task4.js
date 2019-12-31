@@ -1,4 +1,4 @@
-const products = [
+const my_products = [
         {
         id: 3,
         price: 127,
@@ -25,6 +25,6 @@ const products = [
     },
     ];
 
-let products_with_photos = products.filter(product => product.photos != undefined && product.photos.length > 0);
+let products_with_photos = my_products.filter(product => product.photos != undefined && product.photos.length > 0);
 
 console.log(products_with_photos);

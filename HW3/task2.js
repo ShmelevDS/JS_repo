@@ -24,6 +24,6 @@ const post = {
 }
 
 console.log(`author: ${post['author']}`)
-console.log(`author/comments/userId=10/rating/dislikes: ${post['comments'][0]['rating']['dislikes']}`)
-console.log(`author/comments/userId=5: ${post['comments'][1]['userId']}`)
-console.log(`author/comments/userId=5: ${post['comments'][1]['text']}`)
+console.log(`author/comments/userId=10/rating/dislikes: ${post.comments[0].rating.dislikes}`)
+console.log(`author/comments/userId=5: ${post.comments[1].userId}`)
+console.log(`author/comments/userId=5: ${post.comments[1].text}`)
