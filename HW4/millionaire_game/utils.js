@@ -1,7 +1,7 @@
 let utils = {
     playAgain() {
-        play_again = prompt('Хотите сыграть снова? Для повторной игры введите "y"');
-        if (play_again === 'y') {
+        playAgain = prompt('Хотите сыграть снова? Для повторной игры введите "y"');
+        if (playAgain === 'y') {
             game.run();
         }
     },

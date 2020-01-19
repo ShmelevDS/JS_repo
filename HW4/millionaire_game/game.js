@@ -2,9 +2,9 @@ let game = {
     run() {
         let score = 0;
         for (let q = 0; q < config.numberOfQuestions; q++) {
-            console.log(questionsDB.questions[q].question_text);
+            console.log(questionsDB.questions[q].questionText);
             utils.printAnswers(q)
-            result = answer_checker.getAndCheckAnswer(q, score)
+            result = answerChecker.getAndCheckAnswer(q, score)
             if (result === null) {
                 return;
             }
