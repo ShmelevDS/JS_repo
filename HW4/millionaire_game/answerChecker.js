@@ -1,6 +1,6 @@
 let answerChecker = {
     getAndCheckAnswer(q, score) {
-        userAnswer = prompt('Введите порядковый номер верного по-вашему мнению ответа. Для выхода из игры введите любой текст.');
+        let userAnswer = prompt('Введите порядковый номер верного по-вашему мнению ответа. Для выхода из игры введите любой текст.');
         if (userAnswer == questionsDB.questions[q].correctAnswerInd) {
             console.log('Верный ответ!');
             score += 1
